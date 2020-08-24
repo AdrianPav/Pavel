@@ -1,0 +1,130 @@
+*, *:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+}
+h1 {
+  text-align: center;
+}
+section {
+  width: auto;
+  margin: 0;
+  background:radial-gradient(55% 55% at 75% 45%, rgba(0, 0, 0, 0.0005) 0%, rgba(5, 4, 2, 0.5) 100%),url("background.png");
+  height: 110vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.wrapper {
+  min-height: 110vh;
+  position: relative;
+/*  border: 2px solid orange; */
+  border-left: 40px solid white;
+  padding: 15px;
+  font-size: 14px;
+
+}
+.wrapper h3 {
+  font-size: 0.8rem;
+  color: #000;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  margin-left: -30px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+  font-family: Sofia Pro;
+}
+.wrapp{
+    width: 1170px;
+    margin: auto;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 30px 70px;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: Circular Std;
+font-size: 16px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.text{
+    position: absolute;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 290px;
+    text-align: left;
+}
+.text h5{
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-family: Circular Std;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+.text h1{
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: DM Serif Display;
+    letter-spacing: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.text h2{
+    width: 300px;
+    text-align: left;
+    color: #fff;
+    font-size: 12px;
+    font-family: Sofia Pro;
+    letter-spacing: 2px;
+    margin-top: 0px;
+}
+
+.text h4{
+    text-align: left;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 30px;
+    font-family: Sofia Pro;
+}
+.text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 25px;
+    display: inline-block;
+    color: #fff;
+}
+.text a:hover{
+    background: #55BBA6;
+    color: #333;
+}
