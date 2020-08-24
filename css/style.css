@@ -7,6 +7,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin-top: 0;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 h1 {
   text-align: center;
 }
@@ -23,7 +29,6 @@ section {
 .wrapper {
   min-height: 110vh;
   position: relative;
-/*  border: 2px solid orange; */
   border-left: 40px solid white;
   padding: 15px;
   font-size: 14px;
@@ -31,7 +36,7 @@ section {
 }
 .wrapper h3 {
   font-size: 0.8rem;
-  color: #fff;
+  color: #000;
   letter-spacing: 2px;
   position: absolute;
   bottom: 110px;
@@ -53,24 +58,85 @@ section {
     padding: 30px 70px;
 }
 .nav-area{
-    float: right;
-    list-style: none;
-    margin-top: 30px;
-    margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
 }
-.nav-area li{
-    display: inline-block;
+
+.nav-area > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.nav-area li a {
-color: #fff;
-text-decoration: none;
-padding: 5px 20px;
-font-family: Circular Std;
-font-size: 16px;
+.nav-arean {
+  position: relative;
 }
-.nav-area li a:hover{
-    background: #fff;
-    color: #333;
+.nav-arean > a {
+  line-height: 3rem;
+  padding: 0 .8rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: .95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .5s;
+  font-family: Circular Std;
+}
+.nav-arean > a > i {
+  margin-left: .3rem;
+}
+.nav-arean:hover > a {
+  transform: scale(1.1);
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 8rem;
+  background-color: #272626;
+  transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+.dropdown ul{
+  position: relative;
+}
+.dropdown-list > a{
+  display: flex;
+  background-color: #272626;
+  color: #fff;
+  padding: .5rem .1rem;
+  font-size: .9rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: .3s;
+  font-family: Circular Std;
+}
+.dropdown-list:hover > a {
+  color: #55BBA6;
+}
+.dropdown-link:not(:nth-last-child(2)){
+  border-bottom: 1px solid #fff;
+}
+.arrow {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: -5.5px;
+  left: 32px;
+  background-color: #272626;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: .3s;
+
+}
+.nav-arean:hover >.dropdown,
+.dropdown-list:hover > .dropdown {
+  transform: translate(0,0);
+  opacity: 1;
+  pointer-events: auto;
 }
 .text{
     position: absolute;
