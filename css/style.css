@@ -1,11 +1,45 @@
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/circular-std-regular-webfont.woff2') format('woff2'),
+       url('../fonts/circular-std-regular-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('../fonts/dm-serif-display-regular-webfont.woff2') format('woff2'),
+       url('../fonts/dm-serif-display-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/sofia-pro-medium-webfont.woff2') format('woff2'),
+       url('../fonts/sofia-pro-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/sofia-pro-regular-webfont.woff2') format('woff2'),
+       url('../fonts/sofia-pro-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.main {
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Sofia Pro', Helvetica, Arial, sans-serif;
   margin-top: 0;
 }
 
@@ -17,42 +51,44 @@
   text-align: center;
 }
 
-.main_section {
-  width: auto;
-  margin: 0;
-  background: radial-gradient(55% 55% at 75% 45%, rgba(0, 0, 0, 0.0005) 0%, rgba(5, 4, 2, 0.5) 100%), url("background.png");
-  height: 1080px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+.hero__container {
+  min-height: 100vh;
   position: relative;
-}
-
-.side {
-  min-height: 1080px;
-  position: relative;
-  border-left: 40px solid white;
-  padding: 15px;
+  padding: 0 0 15px 40px;
   font-size: 14px;
 }
+  .hero__aside {
+    font-family: Sofia Pro;
+    font-size: 15px;
+    color: #000;
+    background-color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    margin-left: -30px;
+    width: 90px;
+    height: 100%;
+  }
+    .hero__aside-text {
+      display: block;
+      transform: rotate(-90deg);
+      transform-origin: 45px 0;
+      position: absolute;
+      bottom: 175px;
+      text-align: right;
+      width: 100vh;
+    }
 
-.side_text {
-  font-size: 15px;
-  color: #000;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 110px;
-  left: 0;
-  margin-left: -30px;
-  transform: rotate(270deg);
-  transform-origin: 0 0;
-  font-family: Sofia Pro;
-}
-
-.hero {
-  width: 1170px;
-  margin: auto;
-}
+  .hero__content {
+    width: 100%;
+    background: radial-gradient(55% 55% at 75% 45%, rgba(0, 0, 0, 0.0005) 0%, rgba(5, 4, 2, 0.5) 100%), url("../images/background.png");
+    height: 1080px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
 
 .logo {
   float: left;
